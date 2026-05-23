@@ -58,9 +58,7 @@ Sonra Telegram-da botuna mesaj yaz:
 “18-21 may arası gömrük xəbərləri”
 "Bank xəbərlərində ən çox keçən sözlər"
 
-Addım 3 (bonus): Web frontend
-başstreamlit run app.py
-Brauzer http://localhost:8501ünvanında açılacaq.
+
 🔍 Texniki detallar
 Relevance ball necə hesablanır?
 ChromaDB kosinus məsafəsi qaytarır (0 = eyni, 2 = fərqli fərqli). Biz score = 1 - distanceformuluyla 0-1 aralığında uyğunluq skoru hesablayırıq. 1.0 = uyğunluq, 0.5 = orta uyğunluq.
