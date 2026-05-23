@@ -1,0 +1,9 @@
+.env
+embeddings/
+__pycache__/
+*.pyc
+embed_progress.txt
+venv/
+.venv/
+.streamlit/
+*.log
