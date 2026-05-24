@@ -24,30 +24,11 @@ news_assistant/
 ├── bot.py                # Telegram bot
 ├── app.py                # Streamlit web interface
 └── check_setup.py        # Setup yoxlama skripti
-🚀 Quraşdırma
-1. Paketləri qurur
-başpip install -r requirements.txt
-2. .envfaylı yarat
-ÇOX VACİB : VS Code-da əl ilə yarat, terminaldan istifadə etmə.
-VS Code-da File Explorer-də sağ vurun → Yeni Fayl → reklam:.env
-İçinə dəqiq belə yaz (hər biri ayrı sətirdə):
-OPENAI_API_KEY=sk-proj-sənin-key-in
-TELEGRAM_BOT_TOKEN=botfather-dan-aldığın-token
-CSV_PATH=news_data.csv
-⚠️ Diqqət:
 
-Fayl adı dəqiq .env( env.txtYOX, .env.txtYOX)
-=dövründə BOŞLUQ yoxdur
-DIRNAQ yoxdur
 
-3. Dataset-i layihə qovluğuna at
-CSV faylı layihə qovluğunda olmalıdır. Adı .env-də CSV_PATH-ə uyğun olmalıdır.
-4. Setup-ı yoxla
-başpython check_setup.py
-Hər şey yaşıl olmalıdır. Xəta varsa, çıxış sənə nə etməli olduğunu deyəcək.
 📊 İstifadə
 Addım 1: Embedding yarat (yalnız bir dəfə)
-başpython ingest.py
+python ingest.py
 ~5-10 dəqiqə çəkir 20K məqalə üçün. Ortada dayansa, yenidən işə sal — qaldığı yerdən davam edəcək.
 Addım 2: Telegram botu işə sal
 başpython bot.py
@@ -86,7 +67,6 @@ Bu tələb iki yerdə edilib:
 Qlobal — keywords.pymodul bütün verilənlər toplusu işləyə bilər
 Search-result — hər axtarışdan sonra bot frontend nəticədə açar söz/ göstərir
 
-İki kateqoriyaya qaytarılır:
 
 Müəssisə-lər : təşkilat, şəxs, brend adları (məs. "AccessBank", "SOCAR", "Mərkəzi Bank")
 Açar söz-lər : ümumi tez-tez keçən sözlər (məs. "kredit", "vergi", "bazar")
